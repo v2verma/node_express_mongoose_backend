@@ -7,14 +7,14 @@ const nameValidator = [
     validate({
         validator: 'isLength',
         arguments: [3, 40],
-        message: 'Name must not exceed {ARGS[1]} characters.'
+        message: 'Name must be {ARGS[0]} - {ARGS[1]} characters.'
     })
 ];
 
 const emailValidator = [
     validate({
         validator: 'isEmail',
-        message: 'Email must be valid.'
+        message: 'Please enter a valid email.'
     })
 ];
 
